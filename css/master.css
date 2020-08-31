@@ -14,7 +14,7 @@
   width: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .video-grandient-class {
@@ -49,6 +49,77 @@
   height: 1em;
 }
 
+/* section-2 & section-4 exceptional-women  */
+
+.exceptional-women{
+  
+  background-size: cover;
+  /* background-attachment: fixed; */
+  background-position: center;
+  padding: 80px 0px;
+}
+#women1{
+  background-image: url(../Media/images/section-backgrounds/section-2\ bg.jpg);
+}
+#women2{
+  background-image: url(../Media/images/section-backgrounds/section-4\ bg.jpg);
+}
+
+.womens{
+  background-color: white;
+  padding: 40px;
+  max-width: 360px;
+  height: 460px;
+  border-radius:20px;
+}
+.women-history{
+margin: 0 auto;
+}
+.women-profile-pic{
+  background-color: gray;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  margin: 10px auto;
+}
+.women-name{
+  font-family: 'arial';
+  font-size: 15px;
+}
+.women-desp{
+  font-family: 'gerogia';
+  font-size: 18px;
+}
+.c-indicator > li{
+  background-color: var(--blue);
+}
+
+/* section-3 where we are */
+.where-are-we{
+  background-image: url(../Media/images/section-backgrounds/section-3\ bg.jpg);
+  height: 800px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.blue-nav:hover {
+  color: #2699fb !important;
+}
+
+.bg-navbar-grandient {
+  background-image: linear-gradient(0deg, #151515, #ffffff00);
+}
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
+  .brand-margin {
+    margin-top: 1.5em;
+  }
+  .video-inside-container {
+    padding: 0 !important;
+  }
+  #video-section {
+    min-height: 100%;
+  }
 }
