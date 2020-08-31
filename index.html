@@ -31,17 +31,20 @@
 
   <body>
     <div
-      style="height: 100vh-min; min-height: 100vh;"
+      style="height: 100vh-min; min-height: 100vh"
       class="main container-fluid"
     >
       <div class="row h-100">
         <div class="col-xs-12 h-100 col-md-12">
           <div id="landingElement" class="row h-100">
             <div class="col-xs-12 col-sm-3">
-              <div class="row h-100">
-                <div class="col-12 d-flex flex-column justify-content-between">
+              <!-- NOTE desktop navbar -->
+              <div class="row h-100 d-none d-sm-block">
+                <div
+                  class="col-12 d-flex flex-column justify-content-between h-100"
+                >
                   <!-- NOTE Navbar -->
-                  <nav class="navbar navbar-expand-lg navbar-light">
+                  <nav class="navbar navbar-expand-lg navbar-light mt-1">
                     <button
                       class="navbar-toggler"
                       type="button"
@@ -56,7 +59,6 @@
 
                     <div class="container">
                       <div class="row">
-                        <!-- <div class="col-12"></div> -->
                         <div
                           class="col-12 collapse navbar-collapse"
                           id="navBarSupportedContent"
@@ -64,8 +66,8 @@
                           <div
                             class="row d-flex flex-row justify-content-around"
                           >
-                            <div class="col-12 mt-0">
-                              <a href="#" class="navbar-brand">
+                            <div class="col-12">
+                              <a href="#" class="navbar-brand brand-margin">
                                 GIRL
                                 <span class="font-weight-bold">POWER</span>
                                 TALK
@@ -80,7 +82,7 @@
                                   <a href="#" class="nav-link">
                                     <a
                                       href="#"
-                                      class="nav-link font-weight-bold"
+                                      class="nav-link font-weight-bold blue-nav"
                                       >ABOUT</a
                                     >
                                   </a>
@@ -90,7 +92,7 @@
                                   <a href="#" class="nav-link">
                                     <a
                                       href="#"
-                                      class="nav-link font-weight-bold"
+                                      class="nav-link font-weight-bold blue-nav"
                                       >WHERE ARE WE?</a
                                     >
                                   </a>
@@ -100,7 +102,7 @@
                                   <a href="#" class="nav-link">
                                     <a
                                       href="#"
-                                      class="nav-link font-weight-bold"
+                                      class="nav-link font-weight-bold blue-nav"
                                       >ARTICLES</a
                                     >
                                   </a>
@@ -110,7 +112,7 @@
                                   <a href="#" class="nav-link">
                                     <a
                                       href="#"
-                                      class="nav-link font-weight-bold"
+                                      class="nav-link font-weight-bold blue-nav"
                                       >CONTACT</a
                                     >
                                   </a>
@@ -164,7 +166,7 @@
                         <img
                           class="icons-style"
                           src="Media/Icons/facebook.svg"
-                          style="fill: red;"
+                          style="fill: red"
                           alt=""
                         />
                       </li>
@@ -195,31 +197,162 @@
               </div>
             </div>
             <!-- NOTE Video-landing section -->
-            <div class="col-xs-12 col-sm-9 h-100 p-0">
+            <div id="video-section" class="col-xs-12 col-sm-9 p-0">
               <div class="row video-container m-0">
                 <div class="video-inside-container p-2">
                   <div class="video-grandient-class">
-                    <video class="miVideo" src="Media/videos/video.mp4"></video>
+                    <video
+                      autoplay
+                      loop
+                      class="miVideo"
+                      src="Media/videos/video.mp4"
+                    ></video>
                   </div>
                 </div>
-                <!-- <div
-                  style="height: fit-content; min-height: fit-content;"
-                  class="col-12 p-0 m-0 d-flex flex-row justify-content-end"
-                >
-                  <button class="btn btn-primary text-uppercase">
-                    Apply now
-                  </button>
-                </div> -->
                 <div
-                  class="col-12 mr-auto d-flex flex-column justify-content-end"
+                  class="col-12 d-flex flex-column justify-content-between p-0"
                 >
-                  <h1 class="ml-5 text-white text-uppercase mb-2">
-                    <b>Girl Power Talk Mexico</b>
-                  </h1>
-                  <p class="ml-5 h5 font-weight-light text-white mb-5">
-                    We can have a video in the bakcground showing <br />
-                    MExican Culture.
-                  </p>
+                  <div class="d-block d-sm-none">
+                    <!-- NOTE navbar-mobile -->
+                    <nav class="navbar navbar-expand-lg navbar-light mt-1">
+                      <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navBarSupportedContent"
+                        aria-controls="navBarSupportedContent"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                      >
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <button class="d-block d-md-none btn btn-primary">
+                        APPLY NOW
+                      </button>
+
+                      <div class="container">
+                        <div class="row p-0 bg-navbar-grandient">
+                          <div
+                            class="col-12 collapse navbar-collapse mt-3"
+                            id="navBarSupportedContent"
+                          >
+                            <div
+                              class="row d-flex flex-row justify-content-around"
+                            >
+                              <div class="col-12">
+                                <a
+                                  href="#"
+                                  class="navbar-brand brand-margin text-white"
+                                >
+                                  GIRL
+                                  <span class="font-weight-bold">POWER</span>
+                                  TALK
+                                  <br />
+                                  <span class="font-weight-bold text-primary"
+                                    >MEXICO</span
+                                  >
+                                </a>
+
+                                <ul
+                                  class="navbar-nav d-flex flex-column mr-auto"
+                                >
+                                  <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                      <a
+                                        href="#"
+                                        class="nav-link font-weight-bold text-white"
+                                        >ABOUT</a
+                                      >
+                                    </a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                      <a
+                                        href="#"
+                                        class="nav-link font-weight-bold text-white"
+                                        >WHERE ARE WE?</a
+                                      >
+                                    </a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                      <a
+                                        href="#"
+                                        class="nav-link font-weight-bold text-white"
+                                        >ARTICLES</a
+                                      >
+                                    </a>
+                                  </li>
+
+                                  <li class="nav-item">
+                                    <a href="#" class="nav-link">
+                                      <a
+                                        href="#"
+                                        class="nav-link font-weight-bold text-white"
+                                        >CONTACT</a
+                                      >
+                                    </a>
+                                  </li>
+                                </ul>
+                              </div>
+                              <!-- NOTE Social-media-Icons on mobile  -->
+                              <div class="col-12 mt-4 d-md-none">
+                                <ul
+                                  class="d-flex flex-row justify-content-center"
+                                >
+                                  <li class="nav-link">
+                                    <img
+                                      class="icons-style"
+                                      src="Media/Icons/facebook.svg"
+                                      alt=""
+                                    />
+                                  </li>
+                                  <li class="nav-link">
+                                    <img
+                                      class="icons-style"
+                                      src="Media/Icons/instagram.svg"
+                                      alt=""
+                                    />
+                                  </li>
+                                  <li class="nav-link">
+                                    <img
+                                      class="icons-style"
+                                      src="Media/Icons/twitter.svg"
+                                      alt=""
+                                    />
+                                  </li>
+                                  <li class="nav-link">
+                                    <img
+                                      class="icons-style"
+                                      src="Media/Icons/twitter.svg"
+                                      alt=""
+                                    />
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </nav>
+                  </div>
+                  <div class="d-flex flex-row justify-content-end mt-4">
+                    <div class="d-none d-sm-block btn btn-primary mr-5">
+                      APPLY NOW
+                    </div>
+                  </div>
+
+                  <div class="mb-4">
+                    <h1 class="text-white text-uppercase ml-5">
+                      <b>Girl Power Talk Mexico</b>
+                    </h1>
+                    <p class="ml-5 h5 font-weight-light text-white mb-5">
+                      We can have a video in the bakcground showing <br />
+                      MExican Culture.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

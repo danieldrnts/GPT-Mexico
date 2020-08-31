@@ -14,7 +14,7 @@
   width: 100%;
   object-fit: cover;
   z-index: -1;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .video-grandient-class {
@@ -49,6 +49,23 @@
   height: 1em;
 }
 
+.blue-nav:hover {
+  color: #2699fb !important;
+}
+
+.bg-navbar-grandient {
+  background-image: linear-gradient(0deg, #151515, #ffffff00);
+}
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
+  .brand-margin {
+    margin-top: 1.5em;
+  }
+  .video-inside-container {
+    padding: 0 !important;
+  }
+  #video-section {
+    min-height: 100%;
+  }
 }
