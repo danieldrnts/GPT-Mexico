@@ -110,6 +110,13 @@
   background-image: linear-gradient(0deg, #15151583, #ffffff00);
 }
 
+/* NOTE LET-US-KNOW SECTION */
+.let-us-know {
+  height: 15em;
+  background-image: linear-gradient(0deg, #07070fce, #07070fce),
+    url('../Media/images/section-backgrounds/section-let-us-know.jpg');
+}
+
 /* Media Queries */
 @media screen and (max-width: 767px) {
   .brand-margin {
@@ -120,5 +127,8 @@
   }
   #video-section {
     min-height: 100%;
+  }
+  .let-us-know {
+    height: 15em;
   }
 }
